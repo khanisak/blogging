@@ -4,6 +4,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 import ChromeReaderMode from '@material-ui/icons/ChromeReaderMode';
+import { Link } from "react-router-dom";
 
 class ListBlog extends React.Component {
     render() {
@@ -13,7 +14,9 @@ class ListBlog extends React.Component {
                     <Avatar>
                         <ChromeReaderMode />
                     </Avatar>
-                    <ListItemText primary={this.props.title} secondary={this.props.publish} />
+                    <ListItemText primary=
+                        {<Link to={this.props.slug}> {this.props.title} </Link>}
+                        secondary={this.props.publish} />
                 </ListItem>
             </List>
         );

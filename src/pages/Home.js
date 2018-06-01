@@ -7,7 +7,7 @@ import { Posts } from '../util/Posts';
 class Home extends React.Component {
     render() {
         var postList = Posts.map(function(value) {
-            return <ListBlog title={value.title} publish={value.publishDate} />
+            return <ListBlog title={value.title} publish={value.publishDate} slug={value.slug} key={value.slug} />
         });
         return (
             <LayoutB>
