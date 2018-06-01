@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://khanisak.github.io/blogging",
   "dependencies": {
+    "@material-ui/core": "^1.1.0",
+    "@material-ui/icons": "^1.1.0",
     "gh-pages": "^1.1.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
