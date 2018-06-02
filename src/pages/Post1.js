@@ -1,6 +1,5 @@
 import React from 'react';
 import LayoutB from '../containers/LayoutB';
-import Typography from '@material-ui/core/Typography';
 import PostTitle from '../containers/PostTitle';
 import PostContent from '../containers/PostContent';
 
@@ -10,7 +9,7 @@ class Post1 extends React.Component {
             <LayoutB>
                 <PostTitle title={this.props.title} publishDate={this.props.publishDate} />
                 <PostContent>
-                    <a href="https://laravel.com/" target="_blank">Laravel</a> adalah sebuah
+                    <a href="https://laravel.com/" target="_blank" rel="noopener noreferrer">Laravel</a> adalah sebuah
                     <i> open source framework</i> PHP yang cukup populer untuk para
                     developer <i>website</i>. Sedangkan <a href="https://git-scm.com/">Git</a> sendiri adalah sebuah
                     <i> platform version control system</i> yang
