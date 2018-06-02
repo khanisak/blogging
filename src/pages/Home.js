@@ -6,7 +6,6 @@ import { Posts } from '../util/Posts';
 
 class Home extends React.Component {
     render() {
-        console.log(process.env.PUBLIC_URL);
         var postList = Posts.map(function(value) {
             return <ListBlog title={value.title} publish={value.publishDate} slug={value.slug} key={value.slug} />
         });
