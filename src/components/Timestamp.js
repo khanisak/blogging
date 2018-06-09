@@ -1,6 +1,5 @@
 import React from 'react';
 import moment from 'moment';
-import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography, Paper } from '@material-ui/core';
 
@@ -30,9 +29,9 @@ class Timestamp extends React.Component {
                 <Typography variant="headline">
                     {this.state.time}
                 </Typography>
-                <Typography variant="caption">
+                {/* <Typography variant="caption">
                     Waktu cepat berlalu, lakukan sekarang atau tidak sama sekali.
-                </Typography>
+                </Typography> */}
             </Paper>
         );
     }

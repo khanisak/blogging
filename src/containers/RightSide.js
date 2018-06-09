@@ -1,10 +1,14 @@
 import React from 'react';
 import Timestamp from '../components/Timestamp';
+import SlugGenerator from '../components/SlugGenerator';
 
 class RightSide extends React.Component {
     render() {
         return (
-            <Timestamp />
+            <div>
+                <Timestamp />
+                <SlugGenerator />
+            </div>
         );
     }
 }
