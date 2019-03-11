@@ -16,7 +16,7 @@ class Post2 extends React.Component {
             <LayoutB>
                 <PostTitle title={this.props.title} publishDate={this.props.publishDate} />
                 <PostContent>
-                    Anak IT mana yang belum kenal dengan {Github}? Github adalah
+                    Github adalah
                     salah satu dari sekian banyak layanan hosting Git untuk mengembangkan
                     perangkat lunak bersama sama. {Github} menjadi tempat hosting favorit bagi
                     para developer yang mengembangkan <i>code</i> berbasis <i>community / open source</i>.
@@ -66,13 +66,13 @@ class Post2 extends React.Component {
                 </PostContent>
                 <PostContent>
                     Sekali lagi, kalau anda jeli. Ada pilihan <i>Enforce https</i> !
-                    Itu artinya bahwa GithubPages otomatis menyediakan sertifikat https untuk website anda !
+                    Itu artinya bahwa GithubPages otomatis menyediakan sertifikat ssl untuk website anda !
                     Menarik sekali kan? GithubPages bekerjasama dengan {LetsEncrypt} untuk menyediakan sertifikat
-                    https kita secara gratis guys.! <br />
-                    Ingat bahwa setelah anda melakukan setting domain, sertifikat https tidak serta merta akan langsung
+                    ssl kita secara gratis guys.! <br />
+                    Ingat bahwa setelah anda melakukan setting domain, sertifikat ssl tidak serta merta akan langsung
                     muncul pada saat anda mengakses custom domain anda. Sertifikat akan di issued dalam
                     waktu 1x24 jam sesuai ketentuan dari {GithubPages}. <br />
-                    Pastikan bahwa saat setelah anda menyimpan custom domain anda, maka muncul notifikasi bahwa sertifikat https
+                    Pastikan bahwa saat setelah anda menyimpan custom domain anda, maka muncul notifikasi bahwa sertifikat ssl
                     anda sedang proses issued, jika tidak, hapus custom domain anda, lalu simpan kembali custom domain anda untuk
                     memancing proses issued https nya. <br />
                     Karena kemarin pengalaman saya saat saya save custom domain, notifikasi nya tidak berubah menjadi issued https,
