@@ -7,7 +7,7 @@ export const Posts = [
     {
         title: "Ubuntu 16.04 install pgAdmin4",
         publishDate: "March 11, 2019",
-        slug: "ubuntu-1604-install-pgadmin4",
+        slug: "/ubuntu-1604-install-pgadmin4",
         component: Post4
     },
     {

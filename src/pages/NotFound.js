@@ -1,8 +1,13 @@
 import React from 'react';
+import { relativeTimeRounding } from 'moment';
 
 class NotFound extends React.Component {
     render() {
-        return <h1>404 Not Found</h1>
+        return (
+            <div style={{marginLeft: 20}}>
+                <p>404 not found</p>
+            </div>
+        )
     }
 }
 
