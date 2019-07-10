@@ -13,7 +13,7 @@ class Home extends React.Component {
         });
         return (
             <LayoutB>
-                <Grid container spacing={16}>
+                <Grid container spacing={10}>
                     <Grid item xs={12} sm={8} >
                         {postList}
                     </Grid>

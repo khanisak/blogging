@@ -26,7 +26,7 @@ class Timestamp extends React.Component {
                 <Typography>
                     Selamat Datang,
                 </Typography>
-                <Typography variant="headline">
+                <Typography variant="subtitle2">
                     {this.state.time}
                 </Typography>
                 {/* <Typography variant="caption">
@@ -41,7 +41,7 @@ const styles = theme => ({
     root: theme.mixins.gutters({
         paddingTop: 16,
         paddingBottom: 16,
-        marginTop: theme.spacing.unit * 3,
+        marginTop: theme.spacing(3),
     }),
 });
 

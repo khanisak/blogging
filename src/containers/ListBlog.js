@@ -14,7 +14,9 @@ class ListBlog extends React.Component {
                     <Avatar>
                         <ChromeReaderMode />
                     </Avatar>
-                    <ListItemText primary=
+                    <ListItemText
+                        style={{ marginLeft: 15 }}
+                        primary=
                         {<Link to={this.props.slug}> {this.props.title} </Link>}
                         secondary={this.props.publish} />
                 </ListItem>

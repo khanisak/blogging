@@ -24,7 +24,7 @@ const themes = theme => ({
     content: {
         flexGrow: 1,
         // backgroundColor: theme.palette.background.default,
-        padding: theme.spacing.unit * 3,
+        padding: theme.spacing(3),
     }
 });
 

@@ -5,10 +5,10 @@ class PostTitle extends React.Component {
     render() {
         return (
             <div style={{marginBottom: '30px'}}>
-                <Typography align='center' variant="title">
+                <Typography variant="h5" align="center">
                     {this.props.title}
                 </Typography>
-                <Typography align='center' variant="caption">
+                <Typography align='center' variant="subtitle2">
                     {this.props.publishDate}
                 </Typography>
             </div>

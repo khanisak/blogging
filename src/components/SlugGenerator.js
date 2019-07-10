@@ -39,28 +39,30 @@ class SlugGenerator extends React.Component {
             npmSlug = <a href="https://www.npmjs.com/package/slug" target="_blank" rel="noopener noreferrer">Slug</a>;
         return (
             <Paper elevation={1} className={classes.root}>
-                <Typography variant="title">
+                <Typography variant="h6">
                     Slug Generator
-                    <Typography variant="caption">
-                        Powered by {npmSlug}
-                    </Typography>
                 </Typography>
-                <TextField
-                    id="sentence"
-                    name="sentence"
-                    label="Sentence"
-                    className={classes.textField}
-                    value={this.state.sentence}
-                    margin="normal"
-                    onChange={this.handleChangeInput}
-                    onKeyDown={this.handleKeyPress}
-                />
-                <Button variant="raised" size="small" color="primary" className={classes.button} onClick={this.handleGenerateSlug}>
-                    Generate
+                <Typography variant="caption">
+                    Powered by {npmSlug}
+                </Typography>
+                <div>
+                    <TextField
+                        id="sentence"
+                        name="sentence"
+                        label="Sentence"
+                        className={classes.textField}
+                        value={this.state.sentence}
+                        margin="normal"
+                        onChange={this.handleChangeInput}
+                        onKeyDown={this.handleKeyPress}
+                    />
+                    <Button variant="contained" size="small" color="primary" className={classes.button} onClick={this.handleGenerateSlug} style={{marginTop: 30}}>
+                        Generate
                 </Button>
-                <Typography variant="subheading">
-                    {this.state.slug}
-                </Typography>
+                    <Typography variant="subtitle1">
+                        {this.state.slug}
+                    </Typography>
+                </div>
             </Paper>
         );
     }
@@ -70,10 +72,10 @@ const styles = theme => ({
     root: theme.mixins.gutters({
         paddingTop: 16,
         paddingBottom: 16,
-        marginTop: theme.spacing.unit * 3,
+        marginTop: theme.spacing(3),
     }),
     button: {
-        margin: theme.spacing.unit,
+        margin: theme.spacing(1),
     },
 });
 

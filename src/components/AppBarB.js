@@ -56,7 +56,7 @@ class AppBarB extends React.Component {
                         <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" component={Link} to="/home" >
                             <HomeIcon />
                         </IconButton>
-                        <Typography variant="title" color="inherit" className={classes.title}>
+                        <Typography variant="h6" color="inherit" className={classes.title}>
                             {this.props.title}
                         </Typography>
                         <IconButton color="inherit" aria-label="Menu" onClick={this.handleDialogMessageOpen}>
