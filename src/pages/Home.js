@@ -1,29 +1,36 @@
-import React from 'react';
-import LayoutB from '../containers/LayoutB';
-import ListBlog from '../containers/ListBlog';
-import RightSide from '../containers/RightSide';
-import { Posts } from '../util/Posts';
-import Grid from '@material-ui/core/Grid';
+import React from "react";
+import { Grid, Container } from "@material-ui/core";
+import Header from "../components/Header";
+import Main from "../components/Main";
+import ListBlog from "../containers/ListBlog";
+import Sidebar from "../containers/Sidebar";
+import { Posts } from "../util/Posts";
 
-
-class Home extends React.Component {
-    render() {
-        var postList = Posts.map(function (value) {
-            return <ListBlog title={value.title} publish={value.publishDate} slug={value.slug} key={value.slug} />
-        });
-        return (
-            <LayoutB>
-                <Grid container spacing={10}>
-                    <Grid item xs={12} sm={8} >
-                        {postList}
-                    </Grid>
-                    <Grid item xs={12} sm={4} >
-                        <RightSide />
-                    </Grid>
-                </Grid>
-            </LayoutB>
-        );
-    }
-}
+const Home = () => {
+	return (
+		<Container maxWidth="lg">
+			<Header />
+			<Main>
+				<Grid container>
+					<Grid item xs={12} md={8}>
+						{Posts.map(function(value) {
+							return (
+								<ListBlog
+									title={value.title}
+									publish={value.publishDate}
+									slug={value.slug}
+									key={value.slug}
+								/>
+							);
+						})}
+					</Grid>
+					<Grid item xs={12} md={4}>
+						<Sidebar />
+					</Grid>
+				</Grid>
+			</Main>
+		</Container>
+	);
+};
 
 export default Home;

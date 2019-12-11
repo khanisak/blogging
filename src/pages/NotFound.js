@@ -1,5 +1,4 @@
 import React from 'react';
-import { relativeTimeRounding } from 'moment';
 
 class NotFound extends React.Component {
     render() {
